@@ -1,20 +1,29 @@
 <?php
+
 namespace src\controllers;
 
 use \core\Controller;
+use src\handlers\LoginHandler;
+use src\handlers\UserHandler;
 
-class HomeController extends Controller {
+class HomeController extends Controller
+{
+    private $loggedUser;
+    private $isLogged = false;
 
-    public function index() {
-        $this->render('home', ['nome' => 'Bonieky']);
+    public function __construct()
+    {
+        $this->loggedUser = LoginHandler::getLoggedUser();
+        if (!empty($this->loggedUser)) {
+            $this->isLogged = true;
+        }
     }
 
-    public function sobre() {
-        $this->render('sobre');
-    }
+    public function index()
+    {
 
-    public function sobreP($args) {
-        print_r($args);
-    }
+        $user = $this->loggedUser;
 
+        $this->render('home', ['users' => $user]);
+    }
 }

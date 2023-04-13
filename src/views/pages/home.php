@@ -1,3 +1,7 @@
 <?php $render('header'); ?>
 
-Opa, <?=$nome;?>
+<pre>
+
+<?php
+
+print_r($users);
