@@ -19,12 +19,12 @@ class LoginController extends Controller
         }
     }
 
-    public function index()
+    public function userLogin()
     {
-        $this->render('login');
+        $this->render('user_login');
     }
 
-    public function action()
+    public function userLoginAction()
     {
         $email = filter_input(INPUT_POST, 'email');
         $password = filter_input(INPUT_POST, 'password');
@@ -40,18 +40,17 @@ class LoginController extends Controller
             }
 
             // verificar senha
-            if (!password_verify($password, $user['password'])) {
+            if (!password_verify($password, $user->getPassword())) {
                 echo "errou";
                 exit;
             }
 
             // gerar novo token e gravar
-            LoginHandler::_genToken($user['id']);
-
+            LoginHandler::_genToken($user->getId());
 
             var_dump($user);
         } else {
-            $this->redirect("/login");
+            $this->redirect("/entrar");
         }
     }
 }

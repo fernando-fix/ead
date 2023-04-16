@@ -1,7 +1,20 @@
-<?php $render('header'); ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<pre>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="<?= $base; ?>/css/style.css" rel="stylesheet">
+</head>
 
-<?php
+<body>
+    <div>
+        <a href="<?= $base; ?>/cadastrar">cadastro</a>
+    </div>
+    <div>
+        <a href="<?= $base; ?>/entrar">login</a>
+    </div>
+</body>
 
-print_r($users);
+</html>

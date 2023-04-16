@@ -10,7 +10,7 @@
 
 <body>
 
-    <form action="<?= $base; ?>/login" method="POST">
+    <form action="<?= $base; ?>/entrar" method="POST">
         <label for="email">Email:</label>
         <input type="email" name="email" id="email">
         <br>
