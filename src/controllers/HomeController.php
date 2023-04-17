@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->loggedUser = LoginHandler::getLoggedUser();
-        if (!empty($this->loggedUser)) {
+        if ($this->loggedUser) {
             $this->isLogged = true;
         }
     }

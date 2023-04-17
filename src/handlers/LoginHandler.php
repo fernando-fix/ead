@@ -8,7 +8,7 @@ use \src\models\User;
 class LoginHandler
 {
 
-    public static function getLoggedUser(): array
+    public static function getLoggedUser()
     {
         $token = "";
         if (isset($_SESSION['token'])) {
@@ -16,13 +16,13 @@ class LoginHandler
             $loggedUser = UserHandler::findByToken($token);
             // se achou usuário gera novo token e grava no banco
             if (!empty($loggedUser)) {
-                self::_genToken($loggedUser['id']);
+                self::_genToken($loggedUser->getId());
                 // retorna usuário logado
                 return $loggedUser;
             }
         }
         $_SESSION['token'] = "";
-        return [];
+        return false;
     }
 
     public static function _genToken($userId)
