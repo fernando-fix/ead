@@ -1,4 +1,4 @@
--- Tabela users
+-- Criar tabela users
 CREATE TABLE users (
   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(75) NOT NULL,
@@ -8,4 +8,13 @@ CREATE TABLE users (
   phone VARCHAR(50),
   avatar VARCHAR(255),
   token VARCHAR(255)
+);
+
+-- Criar tabela logs
+CREATE TABLE logs (
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  type VARCHAR(75) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  created_at DATETIME NOT NULL
 );
