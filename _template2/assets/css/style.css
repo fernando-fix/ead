@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classes start */
+
+body {
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Classes end */
+
+
+/* Logo cobrindo o botão share start */
+.smcap {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+}
+
+/* Logo cobrindo o botão share end */

@@ -1,0 +1,702 @@
+@mixin responsive-tablet {
+    @media screen and (max-width: 470px) {
+        font-size: 13px;
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    height: 50px;
+}
+
+/* ---------------------- LOGO SITE------------------------- */
+.box1 a>img {
+    width: 100px;
+    margin: 0 75px;
+}
+
+/* ----------------------Menu meio------------------------- */
+.box2 ul li {
+    list-style: none;
+    font-family: "Arial";
+
+}
+
+.box2 ul li>a {
+    text-decoration: none;
+    font-family: "Arial";
+    font-weight: bold;
+    margin: 10px;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.box2 ul li>a:hover {
+    color: #94E20F;
+}
+
+.box2 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* ------------------------Criar conta e entrar-------------------------------- */
+.box3 li a {
+    text-decoration: none;
+    font-family: "Arial";
+    font-weight: bold;
+    margin: 10px;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.box3 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box3 ul li {
+    list-style: none;
+}
+
+/* ---------------------botão criar conta------------------------- */
+.button2>a {
+    border: 1px solid #94E20F;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.button2>a:hover {
+    background-color: #94E20F;
+    color: black;
+}
+
+.button1>a:hover {
+    color: #94E20F;
+}
+
+.bi-person-fill {
+    color: #94E20F;
+}
+
+/* ---------------------botão criar conta------------------------- */
+.button2>a {
+    border: 1px solid #94E20F;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.button2>a:hover {
+    background-color: #94E20F;
+    color: black;
+}
+
+.button1>a:hover {
+    color: #94E20F;
+}
+
+.bi-person-fill {
+    color: #94E20F;
+}
+
+/* -------------------FLEX----------------- */
+/* sempre no container */
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    /* ALIGN CONTENT É PARA USAR QUANDO TIVER WRAP
+    E QUEBRAR E NÃO SAIR A FORMATAÇÃO DO CONTEÚDO */
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-items: center;
+    align-items: flex-end;
+    align-items: stretch;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+    /* Tem que ter mais de uma div para funcionar */
+    align-content: stretch;
+    /* // Valor padrão, ele que faz com que os flex itens cresçam igualmente na vertical. */
+    align-content: flex-start;
+    /* // Alinha todas as linhas de itens ao início.     */
+    align-content: flex-end;
+    /* // Alinha todas as linhas de itens ao final. */
+    align-content: space-around;
+    /* // Alinha todas as linhas de itens ao centro. */
+    align-content: space-between;
+    /* // Cria um espaçamento igual entre as linhas. Mantendo a primeira grudada no topo e a última no bottom. */
+    align-content: space-evenly;
+    /* // Cria um espaçamento entre as linhas. Os espaçamentos do meio são duas vezes maiores que o top e bottom. */
+
+    /* tem que ter espaço no container pra funcionar
+    e tem que ter flex-wrap para funcionar */
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    /* align content só vai ser mais usado quando
+    tiver muitos itens com flex wrap, pq ele
+    junta todos e alinha */
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+
+}
+
+.flex-items {
+    /* fala que vai crescer 2x em relação aos outros 
+    porém é interessante ter nos demais tbm*/
+    flex-grow: 2;
+    /* vai tentar o máximo respeitar os 200px */
+    flex-basis: 200px;
+
+    flex: 1grow 1shrink auto basis;
+
+
+
+    order: 0;
+    /* Tem que colocar em todos os items de uma div
+    e dizer qual a ordem de cada item */
+
+    /* Modifica somente um dos itens especifico */
+    align-self: center;
+}
+
+/* -------------------ÁREA DE VIDEO AULA----------------- */
+
+
+// <!-- CONTAINER DO VIDEO ---------------------------------------------------->
+.container-view {
+    width: 100%;
+    height: 150vh;
+    background-image: url(../img/BACKGROUND.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.div-view {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    max-width: 1440px;
+    width: 100%;
+    // border: 1px solid red;
+}
+
+.container-video-view video {
+    width: 80%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.container-video-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-video-view>div img {
+    max-width: 100px;
+}
+
+// <!-- BOTÕES PASSAR AULA --------------------------------------------------->
+.pass-aula-view {
+    // margin-top: 10px;
+    width: 80%;
+    max-width: 400px;
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pass-aula-view>button {
+    width: 140px;
+    height: 40px;
+    background-color: #2B2B2B;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: "Saira";
+    padding: 10px;
+    transition: all 0.2s linear;
+    font-weight: bold;
+}
+
+.pass-aula-view>button:hover {
+    cursor: pointer;
+    background-color: #94E20F;
+    color: black;
+}
+
+.pass-aula-view>button:active {
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+// <!-- CAMPO DE ANOTAÇÕES AULAS ---------------------------------------------------->
+.anote-aula-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid red;
+    width: 80%;
+    max-width: 400px;
+}
+
+.anote-aula-view>button {
+
+    // @include responsive-tablet();
+    @include responsive-tablet() {}
+
+    z-index: 999;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    margin: 30px 1px 0px 1px;
+    background-color: #3B3B3B;
+    font-family: "Saira";
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.anote-aula-view>button:focus {
+    cursor: pointer;
+    background-color: #191919;
+    color: #B5E72E;
+    transform: scale(1.03);
+}
+
+.anote-aula-view>button:hover {
+    cursor: pointer;
+    background-color: #191919;
+    color: #B5E72E;
+    transform: scale(1.03);
+
+}
+
+// <!-- ÁREA DE DÚVIDAS -->
+.textarea-view {
+    width: 100%;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textarea-view2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 630px;
+    margin: -10px 40px 0px 40px;
+    height: 120px;
+    // border: 1px solid red;
+    border-radius: 10px;
+    background-color: #2B2B2B;
+}
+
+.textarea-view2>textarea {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 70%;
+    padding: 10px;
+    width: 98%;
+    resize: none;
+    border: 0px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-family: "Saira";
+    background-color: #181818;
+}
+
+.textarea-view2>textarea::placeholder {
+    color: #2B2B2B;
+}
+
+.textarea-view2>button {
+    background-color: #181818;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-family: "Saira";
+    margin-bottom: 5px;
+    transition: all 0.2s linear;
+}
+
+.textarea-view2>button:hover {
+    background-color: #B5E72E;
+    color: black;
+    cursor: pointer;
+}
+
+.bi-send-fill {
+    margin-left: 8px;
+}
+
+// <!-- TAGS DE AULAS + DURAÇÃO ---------------------------------------------------->
+.aulas-duration-view {
+    margin-top: 10px;
+    width: 100%;
+    // height: 100%;
+    // max-width: 630px;
+    // border: 1px solid red;
+}
+
+.tags-aulas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid red;
+}
+
+.aulas {
+    width: 630px;
+    margin-left: 30px;
+    margin-right: 30px;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 10px;
+}
+
+.aula-nome {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 35px;
+    background-color: #B5E72E;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+
+.aula-nome:hover {
+    cursor: pointer;
+}
+
+.aula-nome>h3 {
+    font-family: "Saira";
+    margin-left: 10px;
+}
+
+.aula-duration>h3 {
+    font-family: "Saira";
+}
+
+.aula-duration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 20%;
+    height: 35px;
+    background-color: #B5E72E;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+
+.aula-duration:hover {
+    cursor: pointer;
+}
+
+// <!-- BOTÃO PARA MUDAR PARA MAIS AULAS ---------------------------------------->
+.button-pass {
+    width: 100%;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-pass2 {
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 630px;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.button-pass-view {
+    margin-top: 15px;
+    width: 100%;
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.button-pass-view div>button {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 0px;
+    margin-left: 10px;
+    font-family: "Saira";
+    background-color: #1E96C8;
+    font-weight: bold;
+    transition: all 0.2s linear;
+}
+
+.button-pass-view div>button:hover {
+    background-color: #087cad;
+    cursor: pointer;
+}
+
+.button-pass-view div>button:focus {
+    background-color: #065272;
+    cursor: pointer;
+    color: #ffff;
+}
+
+.button-pass-view>img {
+    margin-top: 5px;
+    width: 120px;
+}
+
+/* -------------------CONTAINER RODAPÉ----------------- */
+.detalhe-rodape {
+    overflow: hidden;
+    background-image: linear-gradient(to right, #94E20F, #38A7A0);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.detalhe-rodape div {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin: 0px 40px;
+    padding: 0px 30px;
+}
+
+/* -------------------RODAPÉ----------------- */
+.footer {
+    width: 100%;
+    background-color: #090909;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* -------------------BOX 1----------------- */
+.boxfooter1 {
+    /* border: 1px solid red; */
+    margin: 30px 10px 30px 10px;
+    height: 170px;
+    width: 270px;
+}
+
+.boxfooter1>img {
+    width: 70%;
+}
+
+/* -------------------BOX 2----------------- */
+.boxfooter2 {
+    /* border: 1px solid red; */
+    margin: 30px 10px 30px 10px;
+    height: 170px;
+    width: 270px;
+    border-left: 1px solid white;
+}
+
+.boxfooter2>ul li>a {
+    text-decoration: none;
+    color: grey;
+    font-family: "Arial";
+}
+
+.boxfooter2>ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.boxfooter2 ul div li>a {
+    font-weight: bold;
+    color: white;
+}
+
+.boxfooter2>ul li>a {
+    transition: all 0.2s linear;
+}
+
+.boxfooter2>ul li>a:hover {
+    color: white;
+}
+
+/* -------------------BOX 3----------------- */
+.boxfooter3 {
+    /* border: 1px solid red; */
+    border-left: 1px solid white;
+    margin: 30px 10px 30px 10px;
+    height: 170px;
+    width: 270px;
+}
+
+.boxfooter3>ul li>a {
+    text-decoration: none;
+    color: grey;
+    font-family: "Arial";
+}
+
+.boxfooter3>ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.boxfooter3 ul div li>a {
+    font-weight: bold;
+    color: white;
+}
+
+.boxfooter3>ul li>a {
+    transition: all 0.2s linear;
+}
+
+.boxfooter3>ul li>a:hover {
+    color: white;
+}
+
+/* -------------------BOX 4----------------- */
+.boxfooter4 {
+    /* border: 1px solid red; */
+    border-left: 1px solid white;
+    margin: 30px 10px 30px 10px;
+    height: 170px;
+    width: 270px;
+}
+
+.boxfooter4>ul li>a {
+    text-decoration: none;
+    color: grey;
+    font-family: "Arial";
+}
+
+.boxfooter4>ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.boxfooter4 ul div li>a {
+    font-weight: bold;
+    color: white;
+}
+
+.boxfooter4>ul li>a {
+    transition: all 0.2s linear;
+}
+
+.boxfooter4>ul li>a:hover {
+    color: white;
+}
+
+/* -------------------COPY----------------- */
+.copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #090909;
+}
+
+.copy>a {
+    color: white;
+    text-decoration: none;
+    font-family: "Arial";
+}
+
+.copy a>strong {
+    color: #94E20F;
+}
+
+/* -------------------CONTAINER RODAPÉ----------------- */
+.detalhe-rodape {
+    overflow: hidden;
+    background-image: linear-gradient(to right, #94E20F, #38A7A0);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.detalhe-rodape div {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin: 0px 40px;
+    padding: 0px 30px;
+}
+
+// -------------------

@@ -1,0 +1,35 @@
+/* Responsividade do vídeo start */
+#video-area {
+    border-radius: 15px;
+    background-color: #23272B;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#video-area #video-frame {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+#video-area #video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+/* notebook HD (1366 X 768) */
+@media only screen and (max-height: 768px) {
+    #video-area {
+        max-width: 800px;
+    }
+}
+
+/* Responsividade do vídeo end */
