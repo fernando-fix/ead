@@ -2,18 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 /* Classes start */
 
 body {
+    /* imagem cobrindo o background */
     background-position: center;
     background-size: cover;
 }
 
-
 /* Classes end */
-
 
 /* Logo cobrindo o botão share start */
 .smcap {
@@ -28,3 +28,32 @@ body {
 }
 
 /* Logo cobrindo o botão share end */
+
+.nav-item .active {
+    background-color: var(--bs-gray-800) !important;
+    border-color: var(--bs-gray-800) !important;
+}
+
+.accordion {
+    --bs-accordion-border-color: var(--bs-gray-700);
+}
+
+.accordion-button {
+    background-color: var(--bs-gray-800) !important;
+    color: var(--bs-white) !important;
+}
+
+.accordion-body {
+    background-color: var(--bs-gray-700) !important;
+    color: var(--bs-white) !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+
+/* dar espaço para trabalhar */
+body {
+    padding-bottom: 500px;
+}

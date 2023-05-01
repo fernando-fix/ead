@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css import start -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- css import end -->
+    <!-- import font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- import font end -->
+    <!-- js import start -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- js import end -->
+    <link rel="shortcut icon" href="assets/img/svg/logo-sm.svg" type="image/x-icon">
+    <title>Community Coders - EAD</title>
+</head>
+
+<body style="background-image: url('assets/img/svg/background.svg');">
+    <header>
+        <nav class="navbar " style="background-color: #000000;">
+            <div class="container">
+                <a class="navbar-brand pt-0" href="index.html">
+                    <img style="object-fit: cover;" src="assets/img/png/community_coders.png" alt="logo" width=""
+                        height="40px">
+                </a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="index.html">
+                            <img class="mx-2" src="assets/img/svg/house.svg">
+                            Página inicial
+                        </a>
+                        <a class="dropdown-item" href="index.html">
+                            <img class="mx-2" src="assets/img/svg/person.svg">
+                            Meu perfil
+                        </a>
+                        <a class="dropdown-item" href="index.html">
+                            <img class="mx-2" src="assets/img/svg/speedometer2.svg">
+                            Dashboard
+                        </a>
+                        <a class="dropdown-item" href="index.html">
+                            <img class="mx-2" src="assets/img/svg/layers.svg">
+                            Gerenciar aulas
+                        </a>
+                        <a class="dropdown-item" href="index.html">
+                            <img class="mx-2" src="assets/img/svg/box-arrow-left.svg">
+                            Sair
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- section das aulas start -->
+    <section id="classes" class="mt-3">
+        <div class="container-lg">
+            <div id="video-area" class="mx-auto">
+                <div class="d-flex justify-content-between text-white mb-1 mt-1 ps-1 row row-cols-sm-2">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/img/svg/vscode.svg" alt="curso-logo" style="height: 40px;">
+                        <div>
+                            <h5 class="ms-2">Produtividade com VSCode</h5>
+                            <div style="height: 5px; min-width: 200px;" class="progress ms-2" role="progressbar"
+                                aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-info" style="width: 80%;">
+                                </div>
+                            </div>
+                            <span class="ms-2 text-info">50%</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center col-auto justify-content-end">
+                        <p class="m-0 fs-6">Conhecendo a ferramenta VSCode da Microsoft</p>
+                        <img class="ms-3" src="assets/img/svg/code-slash-color.svg" style="height: 30px;"
+                            alt="curso-aula">
+                    </div>
+                </div>
+                <div id="video-frame">
+                    <iframe class="meu-iframe"
+                        src="https://drive.google.com/file/d/1eAFNeKdnYJQYXvRu24040K2D7aO2tuoL/preview"
+                        title="Video player" controls="0" frameborder="0" style="z-index: 0;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="">
+                    </iframe>
+                    <a href="index.html" class="smcap" title="Community Coders"
+                        style="background-image: url('assets/img/png/logo-sm3.png');">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section das aulas end -->
+
+    <!-- section com os botões de navegação e assistido start -->
+    <section id="" class="">
+        <div class="container-lg">
+            <!-- botões -->
+            <div class="p-2 rounded-3 mt-4 d-flex justify-content-evenly">
+                <a href="" class="btn btn-secondary d-flex align-items-center justify-content-center gap-3">
+                    <img class="sm-mobile" src="assets/img/svg/double-carret-left.svg" alt="Aula anterior"
+                        style="height: 25px;">
+                    <span class="fs-5 hide-mobile"><strong>Aula anterior</strong></span>
+                </a>
+                <div class="">
+                    <a href=""><img src="assets/img/svg/eye-fill-green.svg" alt="Aula seguinte"
+                            style="height: 35px;"></a>
+                </div>
+                <a href="" class="btn btn-secondary d-flex align-items-center justify-content-center gap-3">
+                    <span class="fs-5 hide-mobile"><strong>Aula seguinte</strong></span>
+                    <img class="sm-mobile" src="assets/img/svg/double-carret-right.svg" alt="Aula seguinte"
+                        style="height: 25px;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section com os botões de navegação e assistido end -->
+
+    <!-- section com o conteúdo em abas start -->
+    <section id="NaoSei" class="mt-4">
+        <div class="container-lg">
+            <ul class="nav nav-tabs bg-dark b-3 rounded-top-3 border-dark" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-classes-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-classes" type="button" role="tab" aria-controls="pills-classes"
+                        aria-selected="true">Aulas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-description-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-description" type="button" role="tab" aria-controls="pills-description"
+                        aria-selected="false">Descrição</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-resourses-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-resourses" type="button" role="tab" aria-controls="pills-resourses"
+                        aria-selected="false">Recursos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-notes-tab" data-bs-toggle="pill" data-bs-target="#pills-notes"
+                        type="button" role="tab" aria-controls="pills-notes" aria-selected="false" disabled>
+                        Anotações
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                        aria-selected="false" disabled>Disabled</button>
+                </li>
+            </ul>
+            <div class="tab-content pb-5 rounded-bottom-3" id="pills-tabContent"
+                style="background-color: var(--bs-gray-800);">
+                <div class="tab-pane fade show active" id="pills-classes" role="tabpanel"
+                    aria-labelledby="pills-classes-tab" tabindex="0">
+
+                    <!-- accordion start -->
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <!-- accordion item start -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <span class="me-2">[01/03]</span>
+                                    <strong>Introdução</strong>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <img src="assets/img/svg/eye-fill-green.svg" class="me-2" alt="assistido"
+                                        style="height: 25px; cursor: pointer">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        #01 - Introdução ao VS Code
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <img src="assets/img/svg/eye-fill-gray.svg" class="me-2" alt="assistido"
+                                        style="height: 25px; cursor: pointer">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        #02 - Instalando o VS Code
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <img src="assets/img/svg/eye-fill-gray.svg" class="me-2" alt="assistido"
+                                        style="height: 25px; cursor: pointer">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        #03 - Instalando os plugins
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion item end -->
+                        <!-- accordion item start -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <span class="me-2">[01/03]</span>
+                                    <strong>Produtividade</strong>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <img src="assets/img/svg/eye-fill-green.svg" class="me-2" alt="assistido"
+                                        style="height: 25px; cursor: pointer">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        #01 - Atalhos mais comuns
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <img src="assets/img/svg/eye-fill-gray.svg" class="me-2" alt="assistido"
+                                        style="height: 25px; cursor: pointer">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        #02 - Temas visuais
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <img src="assets/img/svg/eye-fill-gray.svg" class="me-2" alt="assistido"
+                                        style="height: 25px; cursor: pointer">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        #03 - integração com Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion item end -->
+                    </div>
+                    <!-- accordion end -->
+                </div>
+                <div class="tab-pane fade" id="pills-description" role="tabpanel"
+                    aria-labelledby="pills-description-tab" tabindex="0">
+                    Conteúdo da descrição
+                </div>
+                <div class="tab-pane fade" id="pills-resourses" role="tabpanel" aria-labelledby="pills-resourses-tab"
+                    tabindex="0">
+                    Conteúdo dos recursos
+                </div>
+                <div class="tab-pane fade" id="pills-notes" role="tabpanel" aria-labelledby="pills-notes-tab"
+                    tabindex="0">
+                    Conteúdo das anotações
+                </div>
+                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                    tabindex="0">
+                    Desabilitado
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section com o conteúdo em abas end -->
+
+    <script>
+        //nada nada nada
+    </script>
+</body>
+
+</html>

@@ -32,4 +32,15 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .hide-mobile {
+        display: none !important;
+    }
+
+    .sm-mobile {
+        height: 70%;
+        width: 70%;
+    }
+}
+
 /* Responsividade do vídeo end */
