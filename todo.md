@@ -1,0 +1,1 @@
+- [ ] Add logo ao video de apresentação do curso

@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Página-1" id="FZ_DzG7EUPBtZ54YYtt9">
-        <mxGraphModel dx="1318" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="914" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -126,7 +126,7 @@
                 <mxCell id="m35AXOL-ElX0Fh2CuA9U-48" value="id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-47" vertex="1">
                     <mxGeometry y="26" width="140" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="m35AXOL-ElX0Fh2CuA9U-49" value="class_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-47" vertex="1">
+                <mxCell id="m35AXOL-ElX0Fh2CuA9U-49" value="lesson_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-47" vertex="1">
                     <mxGeometry y="52" width="140" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="m35AXOL-ElX0Fh2CuA9U-50" value="description" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-47" vertex="1">
@@ -147,14 +147,19 @@
                 <mxCell id="m35AXOL-ElX0Fh2CuA9U-55" value="user_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-53" vertex="1">
                     <mxGeometry y="52" width="140" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="m35AXOL-ElX0Fh2CuA9U-56" value="class_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-53" vertex="1">
+                <mxCell id="m35AXOL-ElX0Fh2CuA9U-56" value="lesson_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-53" vertex="1">
                     <mxGeometry y="78" width="140" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="created_at" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-53" vertex="1">
                     <mxGeometry y="104" width="140" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="m35AXOL-ElX0Fh2CuA9U-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="m35AXOL-ElX0Fh2CuA9U-2" target="m35AXOL-ElX0Fh2CuA9U-55" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="210" y="80"/>
+                            <mxPoint x="210" y="485"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="m35AXOL-ElX0Fh2CuA9U-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="m35AXOL-ElX0Fh2CuA9U-29" target="m35AXOL-ElX0Fh2CuA9U-56" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -165,7 +170,7 @@
                 <mxCell id="m35AXOL-ElX0Fh2CuA9U-63" value="id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-62" vertex="1">
                     <mxGeometry y="26" width="140" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="m35AXOL-ElX0Fh2CuA9U-64" value="class_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-62" vertex="1">
+                <mxCell id="m35AXOL-ElX0Fh2CuA9U-64" value="lesson_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-62" vertex="1">
                     <mxGeometry y="52" width="140" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="m35AXOL-ElX0Fh2CuA9U-66" value="file" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="m35AXOL-ElX0Fh2CuA9U-62" vertex="1">

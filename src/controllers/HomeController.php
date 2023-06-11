@@ -26,4 +26,13 @@ class HomeController extends Controller
 
         $this->render('home', ['users' => $user]);
     }
+
+    public function logout()
+    {
+        $this->isLogged = false;
+        $this->loggedUser = null;
+        $_SESSION['token'] = null;
+        
+        $this->redirect('/');
+    }
 }
