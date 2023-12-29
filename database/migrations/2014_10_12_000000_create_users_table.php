@@ -17,6 +17,10 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('role')->default('basico');
+            $table->boolean('is_teacher')->default(false);
+            $table->string('theme')->default('dark');
+            $table->string('avatar')->default(asset('media/avatars/profile.png'));
             $table->rememberToken();
             $table->timestamps();
         });
